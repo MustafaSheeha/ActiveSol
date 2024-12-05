@@ -20,7 +20,7 @@ class FirestoreService implements DatabaseService {
 
   @override
   Future<void> create(String collection, Map<String, dynamic> data) async {
-    await firestore.collection(collection).add(data);
+    await firestore.collection(collection).doc(data['name']).set(data);
   }
 
   @override
