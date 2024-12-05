@@ -1,9 +1,9 @@
 abstract class User {
-  String id;
+  String? id;
   String name;
-  int phone;
+  String phone;
   User({
-    required this.id,
+    this.id,
     required this.name,
     required this.phone,
   });
