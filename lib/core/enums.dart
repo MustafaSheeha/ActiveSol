@@ -1,0 +1,1 @@
+enum AdministrationRole {superAdmin,admin}
