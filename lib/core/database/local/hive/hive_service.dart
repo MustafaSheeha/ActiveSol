@@ -2,6 +2,7 @@ import 'package:active_sol_app/core/database/database_service.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 
 class HiveService implements DatabaseService {
+  static Future<void> init() async => await Hive.initFlutter();
 
   @override
   Future<void> create(String collection, Map<String, dynamic> data) async {
