@@ -5,11 +5,18 @@ class FirestoreService implements DatabaseService {
   final FirebaseFirestore firestore = FirebaseFirestore.instance;
   Future<int> getlastId(String prefix) => firestore
       .collection('ids')
-      .doc('2024')
-      .collection('12')
+      .doc('${DateTime.now().year}')
+      .collection('${DateTime.now().month}')
       .doc(prefix)
       .get()
       .then((value) => value['lastId']);
+
+  Future<void> updatelastId(String prefix, int lastId) => firestore
+      .collection('ids')
+      .doc('${DateTime.now().year}')
+      .collection('${DateTime.now().month}')
+      .doc(prefix)
+      .set({'lastId': lastId});
 
   @override
   Future<void> create(String collection, Map<String, dynamic> data) async {
