@@ -1,4 +1,3 @@
-import 'package:active_sol_app/core/models/user.dart';
 import 'package:active_sol_app/core/repository/admin_repository.dart';
 import 'package:active_sol_app/users/administration/admin/model/admin.dart';
 import 'package:active_sol_app/users/administration/super_admin/model/super_admin_behavior.dart';

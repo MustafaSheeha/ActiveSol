@@ -1,4 +1,3 @@
-import 'package:active_sol_app/core/enums.dart';
 import 'package:active_sol_app/core/models/user.dart';
 
 abstract class Administration extends User {
