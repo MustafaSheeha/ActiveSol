@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "51580470988",
+    "project_id": "activesol",
+    "storage_bucket": "activesol.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:51580470988:android:822a4351d538ece8a5a469",
+        "android_client_info": {
+          "package_name": "com.activesol.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAUyTYj-QCz1Ekzz0IfK8CCi7tdtJMp5h4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
