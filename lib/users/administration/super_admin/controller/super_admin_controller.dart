@@ -1,6 +1,7 @@
 import 'package:active_sol_app/core/database/remote/firebase/firestore_service.dart';
 import 'package:active_sol_app/core/enums.dart';
 import 'package:active_sol_app/core/models/user.dart';
+import 'package:active_sol_app/core/repository/admin_repository.dart';
 import 'package:active_sol_app/users/administration/admin/model/admin.dart';
 import 'package:active_sol_app/users/administration/super_admin/model/super_admin_behavior.dart';
 import 'package:get/get.dart';
@@ -48,9 +49,8 @@ class SuperAdminController extends GetxController
   }
 
   @override
-  List<User> getAllAdmins() {
-    // TODO: implement getAllAdmins
-    throw UnimplementedError();
+ Future<List<Admin>> getAllAdmins()async {
+    return await AdminRepository.getAllAdmins();
   }
 
   @override

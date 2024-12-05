@@ -6,7 +6,7 @@ abstract class SuperAdminBehavior {
   void assignRoles();
   Future<void> addAdmin(Admin admin);
   User? getAdminById(String id);
-  List<User> getAllAdmins();
+  Future<List<Admin>> getAllAdmins();
   Future<void> updateAdmin(User updatedAdmin);
   Future<void> deleteAdmin(String id);
 }
