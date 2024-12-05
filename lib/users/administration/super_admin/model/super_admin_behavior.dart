@@ -1,12 +1,9 @@
-import 'package:active_sol_app/core/models/user.dart';
 import 'package:active_sol_app/users/administration/admin/model/admin.dart';
 
 abstract class SuperAdminBehavior {
-  
-  void assignRoles();
   Future<void> addAdmin(Admin admin);
-  User? getAdminById(String id);
+  Future<Admin> getAdminByName(String adminName);
   Future<List<Admin>> getAllAdmins();
-  Future<void> updateAdmin(User updatedAdmin);
+  Future<void> updateAdmin(Admin updatedAdmin);
   Future<void> deleteAdmin(String id);
 }
